@@ -1,0 +1,23 @@
+name: deploy
+
+on: push
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@v1
+  - name: Setup Node.js
+    uses: actions/setup-node@v1
+    with:
+      node-version: 10.x
+  - name: Install Dependencies
+    run: npm install
+  - name: Build Bundle
+    run: npm run build
+  - name: Deploy to GitHub Pages
+    uses: peaceiris/actions-gh-pages@v2.5.0
+    env:
+      ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+      PUBLISH_BRANCH: gh-pages
+      PUBLISH_DIR: ./svelte

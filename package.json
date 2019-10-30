@@ -6,11 +6,15 @@
   "repository": "git@github.com:phoomparin/ywc17-homework.git",
   "author": "Phoomparin Mano <phoomparin@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
   "devDependencies": {
+    "parcel-bundler": "^1.12.4",
     "parcel-plugin-svelte": "^4.0.4"
+  },
+  "dependencies": {
+    "svelte": "^3.12.1"
   }
 }
