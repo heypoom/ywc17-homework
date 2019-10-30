@@ -1,3 +1,5 @@
+import 'whatwg-fetch'
+
 interface NavbarItem {
   href: string
   label: string
