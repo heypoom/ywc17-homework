@@ -1,0 +1,76 @@
+@use 'fonts'
+@use 'variables' as *
+  
+main
+  display: flex
+  flex-direction: column
+
+  margin: 0 auto
+  max-width: 1200px
+  padding: 30px 50px
+
+  @media screen and (max-width: 800px)
+    max-width: 600px
+
+section.primary
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 100%
+
+  .since
+    font-size: 16px
+    font-weight: bold
+
+  .duration
+    font-size: 48px
+    font-weight: bold
+    color: $primary
+    min-height: 90px
+
+.register-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-decoration: none
+
+  color: #fff
+  border-radius: 5px
+  box-shadow: 0 15px 30px 0 rgba(28, 78, 132, 0.4)
+  background-color: #213A8F
+  font-size: 24px
+  margin: 10px 0px
+  width: 800px
+  padding: 10px
+  cursor: pointer
+
+  user-select: none
+
+  transition: all 0.3s ease-in-out
+
+  p
+    margin: 0
+    font-weight: bold
+    line-height: 40px
+
+  &:hover
+    background-color: #FBBC33
+    box-shadow: none
+
+section.details
+  h1
+    font-size: 36px
+    color: $primary
+
+    margin-top: 50px
+
+    p
+      margin: 0
+
+  .detail, .condition
+    @include fonts.legible
+    font-size: 18px
+
+  h3

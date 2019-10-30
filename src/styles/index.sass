@@ -3,6 +3,7 @@
 
 @use 'navbar'
 @use 'hero'
+@use 'main'
 
 @keyframes fade-in
   from
@@ -12,8 +13,9 @@
 
 .fade.in
   animation-name: fade-in
-  animation-duration: 1s
+  animation-duration: 1.2s
   animation-iteration-count: 1
+  animation-timing-function: ease-in-out
   
 body
   margin: 0
@@ -23,59 +25,3 @@ body
 
 *
   box-sizing: border-box
-
-main
-  display: flex
-  margin: 0 auto
-  max-width: 1000px
-  padding: 30px 50px
-
-  @media screen and (max-width: 800px)
-    max-width: 600px
-
-section.primary
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-  width: 100%
-
-  .since
-    font-size: 16px
-    font-weight: bold
-
-  .duration
-    font-size: 48px
-    font-weight: bold
-    color: #E6332A
-    min-height: 90px
-
-.register-box
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  text-decoration: none
-
-  color: #fff
-  border-radius: 5px
-  box-shadow: 0 15px 30px 0 rgba(28, 78, 132, 0.4)
-  background-color: #213A8F
-  font-size: 24px
-  margin: 10px 0px
-  width: 800px
-  padding: 10px
-  cursor: pointer
-
-  user-select: none
-
-  transition: all 0.3s ease-in-out
-
-  p
-    margin: 0
-    font-weight: bold
-    line-height: 40px
-
-  &:hover
-    background-color: #FBBC33
-    box-shadow: none
