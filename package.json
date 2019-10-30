@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel src/views/index.pug",
-    "build": "parcel --public-url '.' build src/views/index.pug"
+    "build": "parcel build --public-url '.' src/views/index.pug"
   },
   "devDependencies": {
     "husky": "^3.0.9",
