@@ -4,11 +4,18 @@ html(lang="th-TH")
     link(rel="stylesheet", href="../styles/index.sass")
   body
     header.navbar
+    section.hero
+      .cover.left
+      .cover.center
+        .hero-logo
+      .cover.right
     main
-      section.hero
-        .cover.left
-        .cover.center
-          .hero-logo
-        .cover.right
+      section.primary
+        .since ตั้งแต่วันที่
+        .duration.fade.in
+        a.register-box
+          p ลงทะเบียน เฟส 2
+          p ตั้งแต่วันที่ 24 ต.ค. 62 วันละ 2 รอบ เวลา 6.00 น. และ 18.00 น.
+          p (จำกัดจำนวนผู้ลงทะเบียนรอบละ 5 แสนคน รวม 1 ล้านคนต่อวัน)
 
     script(src="../scripts/index.ts")
