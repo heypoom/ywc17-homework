@@ -23,7 +23,12 @@ function setNavbar(items: NavbarItem[]) {
   if (!element) return
 
   items.forEach(item => {
-    element.innerHTML += `<a href="${item.href}" class="nav-link fade in" target="_blank">${item.label}</a>`
+    element.innerHTML += `<a
+      href="${item.href}"
+      class="nav-link fade in"
+      target="_blank">
+      ${item.label}
+    </a>`
   })
 }
 
