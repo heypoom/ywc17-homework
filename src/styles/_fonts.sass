@@ -1,0 +1,20 @@
+@mixin font-face($name, $path, $weight: 500, $style: normal)
+  @font-face
+    font-family: $name
+    font-style: $style
+    font-weight: $weight
+    src: url(quote($path + '.woff2')) format('woff2')
+    src: url(quote($path + '.woff')) format('woff')
+
+// Heading Fonts
+@include font-face(TatsanaChon, '../fonts/TatsanaChon-Regular', 500, normal)
+@include font-face(TatsanaChon, '../fonts/TatsanaChon-Bold', 600, bold)
+
+// Legible Fonts
+@include font-face(TatsanaSuksa, '../fonts/TatsanaSuksa-Regular', 500, normal)
+
+@mixin heading
+  font-family: TatsanaChon
+
+@mixin legible
+  font-family: TatsanaSuksa

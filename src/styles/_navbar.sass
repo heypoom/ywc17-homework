@@ -1,0 +1,30 @@
+@use 'fonts'
+@use 'variables' as *
+
+header.navbar
+  @include fonts.heading
+  font-weight: 500
+  font-size: 14px
+
+  display: flex
+  align-items: center
+  justify-content: center
+
+  position: fixed
+  z-index: 1
+  width: 100%
+  height: $nav-height
+  max-width: none
+  padding: 0px
+  margin-bottom: 3.75em
+  background-color: #fff
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1)
+
+  .nav-link
+    text-decoration: none
+    color: #333333
+    background-color: transparent
+    cursor: pointer
+    position: relative
+
+    padding: 0 1.2em

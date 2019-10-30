@@ -1,0 +1,54 @@
+@use 'variables' as *
+
+.hero
+  display: flex
+  align-items: center
+
+  background-color: #2d2d30
+
+section.hero .cover
+  width: 100%
+  height: 350px
+
+  background-size: cover
+  background-repeat: no-repeat
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1)
+
+  &.left
+    background-image: url(../images/banner/left.png)
+
+  &.center
+    display: flex
+    align-items: center
+    justify-content: center
+    background-image: url(../images/banner/center.png)
+
+    .hero-logo
+      width: 240px
+      height: 280px
+      background-size: cover
+      background-image: url(../images/banner/hero-logo.png)
+
+  &.right
+    background-image: url(../images/banner/right.png)
+
+  @media (max-width: $sm)
+    &.left
+      background-image: url(../images/banner/left-s.png)
+
+    &.center
+      background-image: url(../images/banner/center-s.png)
+
+    &.right
+      background-image: url(../images/banner/right-s.png)
+
+    &.center .logo-box
+      width: 110px
+      height: 131px
+      padding: 0
+
+  @media (max-width: $md)
+    &.center .logo-box
+      width: 146px
+      height: 173px
+

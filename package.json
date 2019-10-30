@@ -7,8 +7,8 @@
   "author": "Phoomparin Mano <phoomparin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/index.pug",
-    "build": "parcel build src/index.pug"
+    "start": "parcel src/views/index.pug",
+    "build": "parcel build src/views/index.pug"
   },
   "devDependencies": {
     "husky": "^3.0.9",
