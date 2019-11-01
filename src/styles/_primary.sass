@@ -14,15 +14,21 @@ section.primary
   .duration
     font-size: 48px
     font-weight: bold
-    color: $primary
+    color: $accent
     min-height: 90px
+    text-align: center
 
   hr
+    position: absolute
+    bottom: 70px
+    z-index: -1
+
     border: 0
     width: 100%
-    margin-top: -3.5%
-    z-index: -1
-    border-top: 1px solid rgba(0,0,0,.1)
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+
+    @media screen and (max-width: $md)
+      display: none
 
 section.primary .register-box
   display: flex

@@ -1,6 +1,6 @@
 @use 'fonts'
 @use 'variables' as *
-  
+
 main
   display: flex
   flex-direction: column
@@ -18,7 +18,7 @@ section.details
 
   h1
     font-size: 36px
-    color: $primary
+    color: $accent
 
     margin-top: 50px
 
@@ -35,6 +35,9 @@ section.hotlines
   justify-content: center
   margin-top: 80px
 
+  @media screen and (max-width: $sm)
+    flex-direction: column
+
   .banner
     max-width: 350px
     margin: 0 15px
@@ -45,5 +48,10 @@ section.sponsors
   margin-top: 80px
 
   .sponsor-logo
+    cursor: pointer
     max-width: 100px
     margin: 0 15px
+    transition: all 0.55s ease-in-out
+
+    &:hover
+      transform: scale(1.2)

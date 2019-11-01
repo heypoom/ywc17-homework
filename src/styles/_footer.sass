@@ -1,0 +1,49 @@
+@use 'fonts'
+@use 'variables' as *
+
+footer .footer-container
+  display: flex
+
+  width: 100%
+  margin: 0 auto
+  max-width: 1100px
+
+  h4, p
+    margin: 0
+    font-weight: 300
+
+footer.contact-footer,
+footer.copyright-footer
+  display: flex
+  align-items: center
+  justify-content: center
+  
+footer.contact-footer
+  @include fonts.legible
+
+  margin: 0 auto
+
+  margin-top: 60px
+  min-height: 200px
+  background: #fafafa
+
+  section
+    flex: 1 1 33.33%
+
+  h4.title
+    color: $accent
+
+  img.footer-logo
+    max-width: 100px
+
+  p
+    font-size: 14px
+
+  a
+    color: inherit
+    text-decoration: none
+
+footer.copyright-footer
+  color: #fff
+  min-height: 40px
+  background: #213A8F
