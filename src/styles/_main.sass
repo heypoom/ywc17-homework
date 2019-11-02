@@ -9,18 +9,27 @@ main
   max-width: 1200px
   padding: 30px 50px
 
-  @media screen and (max-width: 800px)
+  @media screen and (max-width: $md)
     max-width: 600px
+    padding: 30px 20px
 
 section.details
+  padding: 0 10px
   max-width: 83.33%
-  margin-top: 40px
+
+  @media screen and (max-width: $md)
+    max-width: 100%
+    margin-top: 20px
 
   h1
     font-size: 36px
     color: $accent
 
     margin-top: 50px
+
+    @media screen and (max-width: $md)
+      font-size: 24px
+      line-height: 1.6em
 
     p
       margin: 0
@@ -30,6 +39,9 @@ section.details
     font-size: 18px
     min-height: 50px
 
+    @media screen and (max-width: $md)
+      font-size: 16px
+
 section.hotlines
   display: flex
   justify-content: center
@@ -37,21 +49,37 @@ section.hotlines
 
   @media screen and (max-width: $sm)
     flex-direction: column
+    align-items: center
 
   .banner
     max-width: 350px
     margin: 0 15px
+
+    @media screen and (max-width: $md)
+      max-width: 250px
 
 section.sponsors
   display: flex
   justify-content: space-between
   margin-top: 80px
 
+  a
+    display: flex
+    align-items: center
+    justify-content: center
+
+  @media screen and (max-width: $md)
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+
   .sponsor-logo
     cursor: pointer
     max-width: 100px
     margin: 0 15px
     transition: all 0.55s ease-in-out
+
+    @media screen and (max-width: $md)
+      max-width: 60px
 
     &:hover
       transform: scale(1.2)

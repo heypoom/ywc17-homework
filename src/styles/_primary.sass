@@ -18,6 +18,10 @@ section.primary
     min-height: 90px
     text-align: center
 
+    @media screen and (max-width: $md)
+      min-height: 0
+      font-size: 1.8em
+
   hr
     position: absolute
     bottom: 70px
@@ -51,10 +55,18 @@ section.primary .register-box
 
   transition: all 0.3s ease-in-out
 
+  @media screen and (max-width: $md)
+    width: 100%
+    font-size: 17px
+
   p
     margin: 0
     font-weight: bold
     line-height: 40px
+    text-align: center
+
+    @media screen and (max-width: $md)
+      line-height: 28px
 
   &:hover
     background-color: #FBBC33

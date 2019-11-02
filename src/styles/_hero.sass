@@ -5,7 +5,6 @@
   align-items: center
 
   padding-top: $nav-height
-  background-color: #2d2d30
 
 section.hero .cover
   width: 100%
@@ -13,7 +12,9 @@ section.hero .cover
 
   background-size: cover
   background-repeat: no-repeat
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1)
+
+  @media screen and (max-width: $md)
+    height: 220px
 
   &.left
     background-image: url(../images/banner/left.png)
@@ -29,6 +30,10 @@ section.hero .cover
       height: 280px
       background-size: cover
       background-image: url(../images/banner/hero-logo.png)
+
+      @media screen and (max-width: $md)
+        width: 110px
+        height: 130px
 
   &.right
     background-image: url(../images/banner/right.png)
