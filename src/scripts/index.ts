@@ -18,8 +18,8 @@ async function loadPageData(): Promise<PageData> {
   return payload.json()
 }
 
-function setNavbar(items: NavbarItem[]) {
-  const element = document.querySelector('header.navbar')
+function setNavbar(selector: string, items: NavbarItem[]) {
+  const element = document.querySelector(selector)
   if (!element) return
 
   items.forEach(item => {
@@ -40,8 +40,10 @@ function setData(selector: string, data: string) {
 async function onReady() {
   const data = await loadPageData()
 
-  setNavbar(data.navbarItems)
+  setNavbar('.navbar', data.navbarItems)
+  setNavbar('.mobile-navbar', data.navbarItems)
 
+  // Initialize the required data properties.
   setData('.duration', data.duration)
   setData('.detail', data.detail)
   setData('.condition', data.condition)

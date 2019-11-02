@@ -1,6 +1,6 @@
 @use 'variables' as *
 
-header.navbar
+.navbar
   font-weight: 500
   font-size: 14px
 
@@ -17,6 +17,9 @@ header.navbar
   margin-bottom: 3.75em
   background-color: #fff
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1)
+
+  @media screen and (max-width: $sm)
+    display: none
 
   .nav-link
     display: flex
@@ -51,3 +54,7 @@ header.navbar
 
     &:hover
       color: $primary
+
+.mobile-navbar
+  @media screen and (min-width: $sm)
+    display: none
