@@ -19,6 +19,11 @@ header.navbar
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1)
 
   .nav-link
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+
     text-decoration: none
     color: #333333
     background-color: transparent
@@ -26,3 +31,23 @@ header.navbar
     position: relative
 
     padding: 0 1.2em
+    transition: 0.3s ease-in-out all
+
+    &:hover:after
+      visibility: visible
+      transform: scaleX(1)
+
+    &:after
+      position: absolute
+      left: 0
+      height: 6px
+      bottom: 4px
+      content: ""
+      width: 100%
+      background: $primary
+      visibility: hidden
+      transform: scaleX(0)
+      transition: all 0.3s ease-in-out 0s
+
+    &:hover
+      color: $primary
