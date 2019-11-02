@@ -1,8 +1,10 @@
 # Phoomparin's Homework for YWC17 Interview, Programming Major.
 
+![](src/images/og-thumbnail.png)
+
 การบ้านสำหรับสัมภาษณ์ YWC17 สาขาโปรแกรมมิ่ง ของภูมิปรินทร์ มะโน
 
-![](src/images/og-thumbnail.png)
+**Website Link:** [https://phoomparin.github.io/ywc17-homework](phoomparin.github.io/ywc17-homework)
 
 ## เทคโนโลยีที่ใช้: Tech Stack and Tooling
 
