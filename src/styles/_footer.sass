@@ -8,6 +8,10 @@ footer .footer-container
   margin: 0 auto
   max-width: 1100px
 
+  @media screen and (max-width: $md)
+    flex-direction: column
+    padding: 20px 40px
+
   h4, p
     margin: 0
     font-weight: 300
@@ -29,9 +33,22 @@ footer.contact-footer
 
   section
     flex: 1 1 33.33%
+    padding: 25px 15px
+
+    @media screen and (max-width: $md)
+      padding: 10px 0
+
+  section.logo-section
+    display: flex
+    align-items: center
+    justify-content: center
+
+    @media screen and (max-width: $md)
+      justify-content: flex-start
 
   h4.title
     color: $accent
+    font-weight: 600
 
   img.footer-logo
     max-width: 100px
